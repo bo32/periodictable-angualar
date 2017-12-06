@@ -1,0 +1,55 @@
+.atomicNumber { 
+    grid-area: header-left; 
+    font-size: 0.7em;
+    text-align: left;
+    margin-left: 3px;
+}
+
+.atomicMass { 
+    grid-area: header-right; 
+    font-size: 0.7em;
+    text-align: right;
+    margin-right: 3px;
+}
+
+.elementSymbol { 
+    grid-area: main; 
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.elementName { 
+    grid-area: footer; 
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.periodic-cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #E9E9E9;
+    display: table;
+    /* background: linear-gradient(to bottom right, #BBBBBB , #F1F1F1); */
+    position: relative;
+    transition:0.25s;
+
+    display: grid;
+    align-content: stretch; 
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 24% auto 24%;
+    grid-template-areas: 'header-left header-right'
+                         'main main'
+                         'footer footer';
+
+    position:relative;
+}
+
+.periodic-cell:hover {
+    transform: scale(1.2,1.2);
+    transform-origin: center;
+    background-size: 100% 100%;
+    background-color: rgba(200, 200, 200,0.2);
+    cursor: pointer;
+    z-index: 5;
+}
+

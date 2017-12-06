@@ -1,0 +1,52 @@
+.liquid {
+    color: navy;
+}
+
+.gas {
+    color: rgb(20, 122, 0);
+}
+
+.solid {
+    color: black;
+}
+
+.synthetic {
+    color: rgb(36, 59, 59);
+}
+
+.noblegas {
+    background: linear-gradient(to bottom right, rgb(30, 165, 243) , rgb(177, 220, 255));
+}
+
+.basicmetal {
+    background: linear-gradient(to bottom right, #EC9600 , #FFDF93);
+}
+
+.transitionmetal {
+    background: linear-gradient(to bottom right, rgb(25, 196, 19) , rgb(173, 255, 228));
+}
+
+.alkalimetal {
+    background: linear-gradient(to bottom right, rgb(179, 0, 0) , rgb(255, 135, 135));
+}
+.alkalineearthmetal {
+    background: linear-gradient(to bottom right, rgb(114, 0, 0) , rgb(214, 147, 147));
+}
+.lanthanide {
+    background: linear-gradient(to bottom right, rgb(20, 196, 122) , rgb(196, 236, 219));
+}
+.aclinide {
+    background: linear-gradient(to bottom right, rgb(4, 95, 175) , rgb(203, 226, 255));
+}
+.seminmetal {
+    background: linear-gradient(to bottom right, #BBBBBB , #F1F1F1);
+}
+.nonmetal {
+    background: linear-gradient(to bottom right, #BBBBBB , #F1F1F1);
+}
+.chalcogens {
+    background: linear-gradient(to bottom right, #BBBBBB , #F1F1F1);
+}
+.halogens {
+    background: linear-gradient(to bottom right, #BBBBBB , #F1F1F1);
+}

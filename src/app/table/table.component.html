@@ -1,0 +1,50 @@
+<h1>Periodic table</h1>
+
+<div>
+  <table>
+    <tr>
+      <td><!-- empty cell --></td>
+      <th *ngFor="let group of groups" [ngClass]="getGroupClass()">
+        {{group.index}}
+      </th>
+    </tr>
+    <tr *ngFor="let period of periods" [ngClass]="getPeriodClass()">
+      <th>{{period.index}}</th>
+
+      <td *ngFor="let e of period.elements" >
+        <app-element [element]="e" (onClicked)="displayModal($event)"></app-element>
+      </td>
+      
+    </tr>
+  </table>
+</div>
+
+<div class="extraRows">
+  <table>
+    <tr>
+      <th>Lanth.</th>
+      <td *ngFor="let e of lanthanideSerie" >
+        <app-element [element]="e" (onClicked)="displayModal($event)"></app-element>
+      </td>
+    </tr>
+    <tr>
+      <th>Actin.</th>
+      <td *ngFor="let e of actinideSerie" >
+        <app-element [element]="e" (onClicked)="displayModal($event)"></app-element>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>{{description}}</p>
+
+<app-modal-element #modalElement>
+  <div class="app-modal-header">
+      <button type="button" class="close" data-dismiss="modal" (click)="modalElement.hide()">&times;</button> 
+      <h3 #modalElementHeader></h3>
+  </div>
+  <div class="app-modal-body" #modalElementBody></div>
+  <div class="app-modal-footer">
+      <button type="button" class="btn btn-default" (click)="modalElement.hide()">Close</button>
+  </div>
+</app-modal-element> 

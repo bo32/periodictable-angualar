@@ -1,0 +1,7 @@
+
+<div [ngClass]="getCellStyle()" (click)="onSelectedElement()" >
+    <div class="atomicNumber">{{element.atomicNumber}}</div>
+    <div class="atomicMass">{{element.atomicMass | number}}</div>
+    <div class="elementSymbol">{{element.symbol}}</div>
+    <div class="elementName">{{element.name}}</div>
+</div>
